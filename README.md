@@ -49,7 +49,7 @@ step-6 Run the program.*/
 
 **PROGRAM**
 
-/* Program for flipflops and verify its truth table in quartus using Verilog programming. Developed by:HARIHARAN M RegisterNumber:25016362
+/* Program for flipflops and verify its truth table in quartus using Verilog programming. Developed by:HARIHARAN M RegisterNumber:25016362*/
 module jk(j,k,clk,q,qbar);
 input j,k,clk;
 output reg q,qbar;
@@ -65,7 +65,7 @@ q<=(j&~q)|(~k&q);
 qbar<=~q;
 end
 endmodule
-*/
+
 
 **RTL LOGIC FOR FLIPFLOPS**
 <img width="1783" height="789" alt="Screenshot 2025-12-17 105529" src="https://github.com/user-attachments/assets/2ffb0ba4-0463-475e-99a5-df7a5b905192" />
