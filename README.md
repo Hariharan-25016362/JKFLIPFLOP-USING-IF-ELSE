@@ -34,7 +34,8 @@ The maximum possible groupings of adjacent ones are already shown in the figure.
 
 **Procedure**
 
-/* write all the steps invloved
+/*write all the steps invloved */
+```
 step-1 Go to quartus software.
 
 step-2 Set new environment.
@@ -45,11 +46,13 @@ step-4 Run the program.
 
 step-5 Give inputs in the waveform table .
 
-step-6 Run the program.*/
+step-6 Run the program.
+```
 
 **PROGRAM**
 
 /* Program for flipflops and verify its truth table in quartus using Verilog programming. Developed by:HARIHARAN M RegisterNumber:25016362*/
+```
 module jk(j,k,clk,q,qbar);
 input j,k,clk;
 output reg q,qbar;
@@ -65,6 +68,7 @@ q<=(j&~q)|(~k&q);
 qbar<=~q;
 end
 endmodule
+```
 
 
 **RTL LOGIC FOR FLIPFLOPS**
