@@ -34,15 +34,48 @@ The maximum possible groupings of adjacent ones are already shown in the figure.
 
 **Procedure**
 
-/* write all the steps invloved */
+/* write all the steps invloved
+step-1 Go to quartus software.
+
+step-2 Set new environment.
+
+step-3 Type the code to implement SR flipflop using verilog and validating their functionality using their functional tables.
+
+step-4 Run the program.
+
+step-5 Give inputs in the waveform table .
+
+step-6 Run the program.*/
 
 **PROGRAM**
 
-/* Program for flipflops and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
+/* Program for flipflops and verify its truth table in quartus using Verilog programming. Developed by:HARIHARAN M RegisterNumber:25016362
+module jk(j,k,clk,q,qbar);
+input j,k,clk;
+output reg q,qbar;
+initial 
+begin
+q=1'b0;
+qbar=1'b1;
+end 
+
+always @(posedge clk)
+begin 
+q<=(j&~q)|(~k&q);
+qbar<=~q;
+end
+endmodule
 */
 
 **RTL LOGIC FOR FLIPFLOPS**
+<img width="1783" height="789" alt="Screenshot 2025-12-17 105529" src="https://github.com/user-attachments/assets/2ffb0ba4-0463-475e-99a5-df7a5b905192" />
+
+
 
 **TIMING DIGRAMS FOR FLIP FLOPS**
+<img width="1713" height="378" alt="Screenshot 2025-12-17 110618" src="https://github.com/user-attachments/assets/35507add-716d-439e-a26a-856866e5eefc" />
+
+
 
 **RESULTS**
+The JK flip-flop was successfully implemented using Verilog with if–else statements.
